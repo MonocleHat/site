@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="newStyle.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre&display=swap&effect=outline"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap&effect=outline"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap&effect=outline"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap&effect=outline"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="newScript.js"></script>
+    <title>Hackme Co. Storefront</title>
+  </head>
+
+  <body>
+    <div class="Jumbotron" id="header">
+      <h1 id="title" class="title font-effect-outline" style="font-family:'Kelly Slab', 'serif';">
+        HACKME Inc. Supply Co.
+      </h1>
+
+      <p id="subtext" style="font-family:'Lilita One', 'serif';">
+        Specializing in anything one might need for any sort of venture<br />
+        Take a gander at our wares, or use the button below to contact me: <br /><span
+          class="contactButton"
+          ><a href="contact.html" class="contactme" title="Contact Me"
+            >Fawks E. Wulf - Cunning Entrepreneur</a
+          ></span
+        >
+      </p>
+    </div>
+    <!--navbar-->
+    <nav class="navbar navbar-inverse fixed-top">
+      <div class="container-fluid" id="navcontainer">
+        <div class="navbar-header">
+          <a
+            class="navbar-brand"
+            href="index.html"
+            title="Created by MonocleHat"
+            id="navbarTitle"
+            style="font-family:'Kelly Slab', 'serif';"
+            >Hackme Supply Co.</a
+          >
+          <a href="index.html"
+            ><img class="rlogo" src="images/HackmeLog.png" width="100" alt="Hackme Logo"
+          /></a>
+        </div>
+        <ul class="nav navbar-nav " id="selections">
+          <li>
+            <a href="#" class="DIY" style="font-family: 'Kelly Slab', serif;"><p>DIY</p></a>
+          </li>
+          <li>
+            <a href="#" class="Gadgets" style="font-family: 'Kelly Slab', serif;"><p>Gadgets</p></a>
+          </li>
+          <li>
+            <a href="#" class="Essentials" style="font-family: 'Kelly Slab', serif;"
+              ><p>Essentials</p></a
+            >
+          </li>
+          <li>
+            <a href="#" class="Pills" style="font-family: 'Kelly Slab', serif;"><p>Pills</p></a>
+          </li>
+          <li>
+            <a href="#" class="Bait" style="font-family: 'Kelly Slab', serif;"><p>Bait</p></a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <div class="dropdown">
+              <button class="btn btn-lg btn-danger navbar-btn" type="button" data-toggle="dropdown">
+                Shopping Cart
+              </button>
+              <ul
+                class="dropdown-menu"
+                style="width:500px; height:300px; padding-right:20px; overflow-y:scroll;"
+              >
+                <li>no-one here but us chickens...</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--grids work-->
+    <div class="gridContain"></div>
+
+    <div class="Jumbotron" id="footer-root">
+      <div id="footer-cont" style="font-family: 'Lilita One', serif;">
+        <div class="foot-text">
+          <h2 class="font-effect-outline">
+            Copyright details: "ACME" and its fictional items are owned by Warner Brothers<br />
+            The logo is owned by Monocle Hat Media (Me) <br />
+            <a
+              href="https://insidetherockposterframe.blogspot.com/2013/05/the-acme-corporation-poster-by-rob-loukotka.html"
+              id="citation"
+              >the background image is designed by "Rob Loukotka"</a
+            >
+          </h2>
+        </div>
+        <div class="subscribe">
+          Subscribe to our newsletter for daily updates on the latest schemes
+          <form action="https://formspree.io/xaydwdaw" method="POST">
+            <label>
+              Your email:
+              <input type="text" name="_replyto" required />
+            </label>
+
+            <!-- your other form fields go here -->
+
+            <button type="submit" id="subbutton">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--modal-->
+    <div id="itemModal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" style="font-family:'Rubik Mono One', 'serif';"></div>
+          <div class="modal-body" style="font-family:'Lilita One', 'serif';"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -512,7 +512,7 @@ function modalLoader(idSel, opt) {
   imgitself.setAttribute('id', 'modalImage');
   imgContain.appendChild(imgitself);
   //desc setup
-  descContain.setAttribute('class', 'col-sm-3');
+  descContain.setAttribute('class', 'col-sm-5');
 
   lineone.innerHTML = description;
   linetwo.innerHTML = price;
